@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x  # Debugging mode
+set -x  
 
 while true; do
     SERVICES=("nginx" "mysql" "ssh")
