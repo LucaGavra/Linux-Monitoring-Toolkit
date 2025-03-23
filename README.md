@@ -10,7 +10,7 @@ A Linux system monitoring and self-healing toolkit using Bash and systemd.
 
 ## Setup
 1. Copy scripts to `/home/youruser/monitoring_toolkit/`
-2. Add and enable `.service` and `.timer` files to `/etc/systemd/system/`
+2. Add and enable `.service` file to `/etc/systemd/system/`
 3. Run:
    ```bash
    sudo systemctl daemon-reload
