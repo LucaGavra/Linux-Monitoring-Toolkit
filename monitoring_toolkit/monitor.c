@@ -20,7 +20,7 @@ void getMemoryUsage() {
 }
 
 int main() {
-    initscr();  // Start ncurses mode
+    initscr();  
     while (1) {
         clear();
         getCPUUsage();
