@@ -1,0 +1,16 @@
+[Unit]
+Description=Self-Healing System Service
+After=network.target
+StartLimitInterval=300
+StartLimitBurst=3
+
+[Service]
+ExecStart=/bin/bash /home/luca/monitoring_toolkit/self_heal.sh
+Restart=always
+RestartSec=30
+User=root
+StandardOutput=append:/home/luca/self_heal_service.log
+StandardError=append:/home/luca/self_heal_error.log
+
+[Install]
+WantedBy=multi-user.target
